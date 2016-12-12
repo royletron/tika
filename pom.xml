@@ -165,6 +165,31 @@ least three +1 Tika PMC votes are cast.
               </dependency>
             </dependencies>
           </plugin>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>cobertura-maven-plugin</artifactId>
+            <configuration>
+              <instrumentation>
+              </instrumentation>
+            </configuration>
+            <executions>
+              <execution>
+                <id>clean</id>
+                <phase>pre-site</phase>
+                <goals>
+                  <goal>clean</goal>
+                </goals>
+              </execution>
+              <execution>
+                <id>instrument</id>
+                <phase>site</phase>
+                <goals>
+                  <goal>instrument</goal>
+                  <goal>cobertura</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
         </plugins>
       </build>
     </profile>
