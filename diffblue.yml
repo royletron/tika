@@ -1,7 +1,7 @@
 branch: master
 language: java
 buildCmd: mvn compile
-testCmd: cd tika-batch; cp ~/pom.xml .; mvn cobertura:cobertura; cobertura-report --datafile target/cobertura/cobertura.ser --format xml --destination target/cobertura
+testCmd: cd tika-batch; mvn cobertura:cobertura; cobertura-report --datafile target/cobertura/cobertura.ser --format xml --destination target/cobertura
 reportFile: tika-batch/target/cobertura/coverage.xml
 timeout: 3600
 memout: 8000000000
