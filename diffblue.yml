@@ -1,2 +1,2 @@
-buildCmd: mvn compile
-testCmd: mvn test
+buildCmd: cd tika-parsers; mvn compile
+testCmd: cd tika-parsers; mvn test
