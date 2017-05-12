@@ -1,2 +1,4 @@
 buildCmd: cd tika-batch; mvn compile
 testCmd: cd tika-batch; mvn test
+cbmcArguments:
+    disable-testsuite-minimization: true
