@@ -1,2 +1,4 @@
 buildCmd: mvn compile
 testCmd: mvn test
+cbmcArguments:
+  java-test-input-factory: greedy
