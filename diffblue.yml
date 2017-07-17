@@ -1,2 +1,101 @@
 buildCmd: mvn compile
-testCmd: mvn test
+testCmd: true
+cbmcArguments:
+  - classpath: '/tools/cbmc/models.jar:/diffblue-workspace/version-new/tika-app/target/classes:/diffblue-workspace/version-new/tika-batch/target/classes:/diffblue-workspace/version-new/tika-bundle/target/classes:/diffblue-workspace/version-new/tika-core/target/classes:/diffblue-workspace/version-new/tika-dl/target/classes:/diffblue-workspace/version-new/tika-dotnet/target/classes:/diffblue-workspace/version-new/tika-eval/target/classes:/diffblue-workspace/version-new/tika-example/target/classes:/diffblue-workspace/version-new/tika-java7/target/classes:/diffblue-workspace/version-new/tika-langdetect/target/classes:/diffblue-workspace/version-new/tika-nlp/target/classes:/diffblue-workspace/version-new/tika-parent/target/classes:/diffblue-workspace/version-new/tika-parsers/target/classes:/diffblue-workspace/version-new/tika-serialization/target/classes:/diffblue-workspace/version-new/tika-server/target/classes:/diffblue-workspace/version-new/tika-translate/target/classes:/diffblue-workspace/version-new/tika-xmp/target/classes:.'
+units:
+  - target:
+      - sourceDir: tika-batch/src/main/java
+        dir: tika-batch/target/classes
+        file: org/apache/tika/batch/AutoDetectParserFactory.class
+    libs: []
+    context: []
+  - target:
+      - sourceDir: tika-batch/src/main/java
+        dir: tika-batch/target/classes
+        file: org/apache/tika/batch/fs/FSDocumentSelector.class
+      - sourceDir: tika-batch/src/main/java
+        dir: tika-batch/target/classes
+        file: org/apache/tika/batch/fs/builders/FSCrawlerBuilder.class
+    libs: []
+    context: []
+  - target:
+      - sourceDir: tika-batch/src/main/java
+        dir: tika-batch/target/classes
+        file: org/apache/tika/batch/BatchProcess$1.class
+      - sourceDir: tika-batch/src/main/java
+        dir: tika-batch/target/classes
+        file: org/apache/tika/batch/BatchProcess$2.class
+      - sourceDir: tika-batch/src/main/java
+        dir: tika-batch/target/classes
+        file: org/apache/tika/batch/BatchProcess$BATCH_CONSTANTS.class
+      - sourceDir: tika-batch/src/main/java
+        dir: tika-batch/target/classes
+        file: org/apache/tika/batch/BatchProcess$CAUSE_FOR_TERMINATION.class
+      - sourceDir: tika-batch/src/main/java
+        dir: tika-batch/target/classes
+        file: org/apache/tika/batch/BatchProcess.class
+      - sourceDir: tika-batch/src/main/java
+        dir: tika-batch/target/classes
+        file: org/apache/tika/batch/BatchProcess$State.class
+      - sourceDir: tika-batch/src/main/java
+        dir: tika-batch/target/classes
+        file: org/apache/tika/batch/BatchProcess$TimeoutChecker.class
+      - sourceDir: tika-batch/src/main/java
+        dir: tika-batch/target/classes
+        file: org/apache/tika/batch/BatchProcess$TimeoutFutureResult.class
+    libs: []
+    context: []
+  - target:
+      - sourceDir: tika-batch/src/main/java
+        dir: tika-batch/target/classes
+        file: org/apache/tika/batch/fs/builders/BasicTikaFSConsumersBuilder.class
+    libs: []
+    context: []
+  - target:
+      - sourceDir: tika-batch/src/main/java
+        dir: tika-batch/target/classes
+        file: org/apache/tika/batch/fs/FSBatchProcessCLI.class
+    libs: []
+    context: []
+  - target:
+      - sourceDir: tika-batch/src/main/java
+        dir: tika-batch/target/classes
+        file: org/apache/tika/batch/fs/FSDirectoryCrawler.class
+    libs: []
+    context: []
+  - target:
+      - sourceDir: tika-batch/src/main/java
+        dir: tika-batch/target/classes
+        file: org/apache/tika/batch/fs/FSListCrawler.class
+    libs: []
+    context: []
+  - target:
+      - sourceDir: tika-batch/src/main/java
+        dir: tika-batch/target/classes
+        file: org/apache/tika/batch/fs/FSUtil.class
+    libs: []
+    context: []
+  - target:
+      - sourceDir: tika-batch/src/main/java
+        dir: tika-batch/target/classes
+        file: org/apache/tika/batch/builders/CommandLineParserBuilder.class
+    libs: []
+    context: []
+  - target:
+      - sourceDir: tika-batch/src/main/java
+        dir: tika-batch/target/classes
+        file: org/apache/tika/batch/FileStarted.class
+    libs: []
+    context: []
+  - target:
+      - sourceDir: tika-batch/src/main/java
+        dir: tika-batch/target/classes
+        file: org/apache/tika/batch/FileResourceConsumer.class
+    libs: []
+    context: []
+  - target:
+      - sourceDir: tika-batch/src/main/java
+        dir: tika-batch/target/classes
+        file: org/apache/tika/batch/FileResourceCrawler.class
+    libs: []
+    context: []
