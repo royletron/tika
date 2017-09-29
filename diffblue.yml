@@ -1,2 +1,4 @@
 buildCmd: mvn compile
 testCmd: mvn test
+cbmcArguments:
+  classpath: '/diffblue-workspace/version-new/libs/models.jar:/diffblue-workspace/version-new/tika-app/target/classes:/diffblue-workspace/version-new/tika-bundle/target/classes:/diffblue-workspace/version-new/tika-dotnet/target/classes:/diffblue-workspace/version-new/tika-java7/target/classes:/diffblue-workspace/version-new/tika-parent/target/classes:/diffblue-workspace/version-new/tika-serialization/target/classes:/diffblue-workspace/version-new/tika-translate/target/classes:/diffblue-workspace/version-new/tika-batch/target/classes:/diffblue-workspace/version-new/tika-core/target/classes:/diffblue-workspace/version-new/tika-example/target/classes:/diffblue-workspace/version-new/tika-langdetect/target/classes:/diffblue-workspace/version-new/tika-parsers/target/classes:/diffblue-workspace/version-new/tika-server/target/classes:/diffblue-workspace/version-new/tika-xmp/target/classes:.'
